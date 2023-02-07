@@ -1,0 +1,147 @@
+* {
+  background: #1C1C1C;
+}
+
+h1 {
+  font-family: 'Goldman', cursive;
+  color: #00ff00;
+  text-align: center;
+}
+.container {
+  display: inline-flex;
+  width: 1200x;
+
+}
+.container p {
+  /* width: 111100px; */
+  color: white;
+  font-family: 'Goldman', cursive;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 50px;
+  margin: 1em;
+}
+
+.container {
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.container img {
+  width: 350px;
+  float: left;
+  margin-right: 20px;
+}
+
+/* body{
+  background-image: radial-gradient(circle at 107.36% 90.17%, #009bef 0, #009aff 4.17%, #0098ff 8.33%, #0096ff 12.5%, #0092ff 16.67%, #008eff 20.83%, #0088ff 25%, #0080ff 29.17%, #0077ff 33.33%, #006dff 37.5%, #6460ff 41.67%, #9450ff 45.83%, #b53cf2 50%, #cf1edf 54.17%, #e300ca 58.33%, #f200b5 62.5%, #fd009e 66.67%, #ff0088 70.83%, #ff0071 75%, #ff005b 79.17%, #ff0045 83.33%, #ff002f 87.5%, #f90014 91.67%, #ef2100 95.83%, #e43b00 100%);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background: none;
+}
+
+.container-fatos {
+  position: relative;
+  padding:  20px;
+  max-width: 640px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.gallery-wrapper {
+  overflow-x: auto;
+
+}
+
+.arrow-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  font-size: 20px;
+  line-height: 250px;
+  width: 40px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  /* background: linear-gradient(0deg,rgba(210,10,70,.85),rgba(138,21,56,.85)); */
+  opacity: 0.2;
+  transition: all 600ms ease-in-out;
+
+}
+
+.arrow-right {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0;
+  bottom: 0;
+  font-size: 20px;
+  line-height: 250px;
+  width: 40px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(0deg, #00ff00);
+  opacity: 0.2;
+  transition: all 600ms ease-in-out;
+
+}
+
+.arrow-left:hover{
+  opacity: 1;
+
+}
+
+.arrow-right:hover{
+  opacity: 1;
+
+}
+
+.item {
+  width: 350px;
+  height: 350px;
+  flex-shrink: 0;
+  opacity: 0.5;
+  border: 5px solid #FFF;
+  transition: all 600ms ease-in-out;
+  background: linear-gradient(to left, transparent 0%,  #00ff00);
+
+
+
+}
+
+.current-item {
+  opacity: 1;
+  border: 5px solid black;
+  box-shadow: 0 0 12px  #00ff00; ;
+  width: 350px;
+  height: 250px;
+
+
+
+
+}
+
+.gallery-wrapper::-webkit-scrollbar{
+  display: none;
+
+}
+
+.gallery, ul{
+  display: flex;
+  flex-flow: row nowrap;
+  gap:15px;
+  list-style: none;
+}

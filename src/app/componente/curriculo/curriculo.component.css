@@ -2,6 +2,11 @@
   background: #1C1C1C;
 }
 
+h1 {
+  font-family: 'Goldman', cursive;
+  color: #00ff00;
+  text-align: center;
+}
 .container {
   display: inline-flex;
   width: 1200x;
@@ -13,17 +18,20 @@
   font-family: 'Goldman', cursive;
   font-size: 20px;
   text-align: justify;
-  line-height: 24px;
-  margin: 1.5em;
+  line-height: 50px;
+  margin: 1em;
 }
 
-.container .tit-skills {
+.container {
   font-size: 30px;
   text-align: center;
+
 }
 
 .container img {
-  width: 500px;
+  width: 350px;
   float: left;
   margin-right: 20px;
 }
+
+

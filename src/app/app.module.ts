@@ -9,6 +9,7 @@ import { InicioComponent } from './componente/inicio/inicio.component';
 import { CurriculoComponent } from './componente/curriculo/curriculo.component';
 import { ProjetosComponent } from './componente/projetos/projetos.component';
 import { FormsModule } from '@angular/forms';
+import { ContatoComponent } from './componente/contato/contato.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     RodapeComponent,
     InicioComponent,
     CurriculoComponent,
-    ProjetosComponent
+    ProjetosComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,69 @@
-<p>projetos works!</p>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos</title>
+  <link rel="stylesheet" href="projetos.component.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Goldman&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fatos">
+    <button class="arrow-left control" aria-label="Previous Image"><i class="fa-solid fa-backward"></i></button>
+    <button class="arrow-right control" aria-label="Next Image"><i class="fa-solid fa-forward"></i></button>
+    <div class="gallery-wrapper">
+      <div class="container">
+        <h1>Abaixo, os meus projetos</h1>
+      </div>
+      <div class="gallery">
+        <ul data-slides>
+          <li class="slide" data-active>
+            <button><a class="nav-link" href="https://github.com/LucasEscotoDaLuz/showtime"><img
+                  class="item current-item" src="../../../assets/lucasflix.png"></a></button>
+          </li>
+          <li class="slide" data-active>
+            <button><a class="nav-link" href="https://github.com/LucasEscotoDaLuz/ProjetoWFormsMySql"><img
+                  class="item current-item" src="../../../assets/wforms-mysql.png"></a></button>
+          </li>
+          <li class="slide" data-active>
+            <button><a class="nav-link" href="https://github.com/LucasEscotoDaLuz/historiaCopa"><img
+                  class="item current-item" src="../../../assets/copas-do-mundo.png"></a></button>
+          </li>
+          <li class="slide" data-active>
+            <button><a class="nav-link" href="https://github.com/LucasEscotoDaLuz/petshop-html-css-bootstrap"><img
+                  class="item current-item" src="../../../assets/projeto-faculdade-2.png"></a></button>
+          </li>
+          <li class="slide" data-active>
+            <button><a class="nav-link" href="https://github.com/LucasEscotoDaLuz/projeto-faculdade"><img
+                  class="item current-item" src="../../../assets/projeto-faculdade.png"></a></button>
+          </li>
+          <li class="slide" data-active>
+            <button><a class="nav-link" href="https://github.com/LucasEscotoDaLuz/Treinando--Python-"><img
+                  class="item current-item" src="../../../assets/jogo-python.png"></a></button>
+          </li>
+          <li class="slide" data-active>
+            <button><a class="nav-link" href="https://github.com/LucasEscotoDaLuz/Jogo-Friends"><img
+                  class="item current-item" src="../../../assets/jogo-friends.png"></a></button>
+          </li>
+          <li class="slide" data-active>
+            <button><a class="nav-link" href="https://github.com/LucasEscotoDaLuz/jogo-da-forca"><img
+                  class="item current-item" src="../../../assets/jogo-forca.png"></a></button>
+          </li>
+          <li class="slide" data-active>
+            <button><a class="nav-link" href="https://github.com/LucasEscotoDaLuz/lucasescotodaluz1010"><img
+                  class="item current-item" src="../../../assets/curriculo-html.png"></a></button>
+          </li>
+          <li class="slide" data-active>
+            <button><a class="nav-link" href="https://github.com/LucasEscotoDaLuz/alura-plus"><img
+                  class="item current-item" src="../../../assets/alura-lingua.png"></a></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/8605c170d4.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="carrossel.js" defer></script>
+  <router-outlet></router-outlet>
+</body>
+
