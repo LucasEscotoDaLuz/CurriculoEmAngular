@@ -63,7 +63,7 @@ footer {
       grid-template-columns: repeat(1, 0.5fr);
 
   }
-  .rede-linkedin, .rede-github, .rede-instagram, . {
+  .rede-linkedin, .rede-github, .rede-instagram {
       max-width: 90%;
       align-items: center;
 

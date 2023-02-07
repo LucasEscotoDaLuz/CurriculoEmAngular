@@ -1,0 +1,29 @@
+* {
+  background: #1C1C1C;
+}
+
+.container {
+  display: inline-flex;
+  width: 1200x;
+
+}
+.container p {
+  /* width: 111100px; */
+  color: white;
+  font-family: 'Goldman', cursive;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 24px;
+  margin: 1.5em;
+}
+
+.container .tit-skills {
+  font-size: 30px;
+  text-align: center;
+}
+
+.container img {
+  width: 500px;
+  float: left;
+  margin-right: 20px;
+}
