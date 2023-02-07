@@ -1,80 +1,19 @@
-ul {
-  align-items: center;
+* {
+  background-color: #1C1C1C;
 }
 
-.icones__redes__sociais {
- align-items: center;
+.main-footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
-
-/*Ícones Redes Sociais*/
-.rede-linkedin {
-  margin: 100px;
-  max-width: 100px;
-  max-height: 255px;
-  object-fit: contain;
-
-
-}
-
-.rede-instagram, .rede-github {
-  margin: 100px;
-  max-width:  150px;
-  max-height: 255px;
-  object-fit: contain;
-
-}
-
-.rede-whatsapp {
-
-  margin: 100px;
-  max-width:  80px;
-  max-height: 155px;
-  object-fit: contain;
-
-}
-
-
-
-footer {
+p {
+  width: 100%;
+  color: white;
+  font-family: 'Goldman', cursive;
+  font-size: 20px;
   text-align: center;
-  background: white;
-  padding: 25px;
-}
-
-.texto__rodape {
-  color: wheat;
-
-  text-align: center;
-  font-size: 16px;
-
-}
-
-@media screen and (max-width: 1024px) {
-  .texto__rodape {
-
-      flex-direction:column;
-      flex-wrap: wrap;
-      justify-content: space-between;
-
-  }
-
-  .icones__redes__sociais {
-      grid-template-columns: repeat(1, 0.5fr);
-
-  }
-  .rede-linkedin, .rede-github, .rede-instagram {
-      max-width: 90%;
-      align-items: center;
-
-
-  }
-
-  .rede-whatsapp {
-      transform: translate(50%);
-
-
-
-  }
-
+  margin: 0;
 }
