@@ -3,8 +3,8 @@
 }
 
 h1 {
+  color: white;
   font-family: 'Goldman', cursive;
-  color: #00ff00;
   text-align: center;
 }
 .container {
@@ -13,7 +13,6 @@ h1 {
 
 }
 .container p {
-  /* width: 111100px; */
   color: white;
   font-family: 'Goldman', cursive;
   font-size: 20px;

@@ -1,3 +1,36 @@
-body, div {
+* {
   background: #1C1C1C;
+  margin: 1em;
+}
+
+h1 {
+  font-family: 'Goldman', cursive;
+  color: #DCDCDC;
+  text-align: center;
+}
+
+.container {
+  display: inline-flex;
+  width: 500x;
+}
+
+.container p {
+  color: white;
+  font-family: 'Goldman', cursive;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 50px;
+  margin: 1em;
+}
+
+.container {
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.container img {
+  width: 350px;
+  float: left;
+  margin-right: 20px;
 }
