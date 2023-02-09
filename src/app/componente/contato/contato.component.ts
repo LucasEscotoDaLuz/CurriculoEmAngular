@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormControl, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-contato',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./contato.component.css']
 })
 export class ContatoComponent {
-
+  constructor(private builder: FormBuilder) {}
 }

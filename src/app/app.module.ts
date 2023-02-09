@@ -6,9 +6,8 @@ import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './componente/cabecalho/cabecalho.component';
 import { RodapeComponent } from './componente/rodape/rodape.component';
 import { InicioComponent } from './componente/inicio/inicio.component';
-import { CurriculoComponent } from './componente/curriculo/curriculo.component';
 import { ProjetosComponent } from './componente/projetos/projetos.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContatoComponent } from './componente/contato/contato.component';
 
 @NgModule({
@@ -17,14 +16,15 @@ import { ContatoComponent } from './componente/contato/contato.component';
     CabecalhoComponent,
     RodapeComponent,
     InicioComponent,
-    CurriculoComponent,
     ProjetosComponent,
-    ContatoComponent
+    ContatoComponent,
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
