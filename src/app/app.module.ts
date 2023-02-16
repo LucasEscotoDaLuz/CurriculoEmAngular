@@ -8,7 +8,9 @@ import { RodapeComponent } from './componente/rodape/rodape.component';
 import { InicioComponent } from './componente/inicio/inicio.component';
 import { ProjetosComponent } from './componente/projetos/projetos.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ContatoComponent } from './componente/contato/contato.component';
+import { HttpClientModule } from '@angular/common/http';
+import { EmailService } from './email.service';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 @NgModule({
   declarations: [
@@ -17,16 +19,20 @@ import { ContatoComponent } from './componente/contato/contato.component';
     RodapeComponent,
     InicioComponent,
     ProjetosComponent,
-    ContatoComponent,
+
 
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    NgImageSliderModule
+
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }
