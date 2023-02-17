@@ -39,7 +39,10 @@ body {
   background:none;
   width: 60%;
 }
-
+strong{
+  background: none;
+  color: #00FFFF;
+}
 .wrapper::after {
   position: absolute;
   content: '';
