@@ -1,3 +1,4 @@
+import { DownloadFileService } from './download-file.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -11,28 +12,28 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { EmailService } from './email.service';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { CarouselComponent } from "./componente/projetos/carousel.component";
+import { CurriculoComponent } from "./componente/curriculo/curriculo.component";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CabecalhoComponent,
-    RodapeComponent,
-    InicioComponent,
-    ProjetosComponent,
+    declarations: [
+        AppComponent,
+        CabecalhoComponent,
+        RodapeComponent,
+        InicioComponent,
+        ProjetosComponent,
+        CurriculoComponent
+    ],
+    providers: [DownloadFileService],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        AppRoutingModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+        NgImageSliderModule,
 
-
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    NgImageSliderModule
-
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
-
+    ]
 })
 export class AppModule { }

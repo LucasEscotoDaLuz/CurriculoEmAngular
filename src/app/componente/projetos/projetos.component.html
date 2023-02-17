@@ -9,8 +9,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Goldman&display=swap" rel="stylesheet">
 </head>
 
-<ng-image-slider [images]="imgCollection" #nav></ng-image-slider>
-
+<div *ngIf="images && images.length > 0" class="carousel-container">
+  <img *ngFor="let image of images"; let i="index"
+        src="image.imageSrc"
+        alt="image.imageAlt"
+        ngClass="{'image-active': selectIndex === i}"
+  >
+</div>
+<app-projetos [images]="images"></app-projetos>
 <!-- <body>
   <div class="container-fatos">
     <div class="container">
@@ -30,8 +36,8 @@
                   class="item current-item" src=""></a></button>
           </li>
           <li class="slide" data-active>
-            <button><a class="nav-link" href="https://github.com/LucasEscotoDaLuz/historiaCopa"><img
-                  class="item current-item" src="../../../assets/copas-do-mundo.png"></a></button>
+            <button><a class="nav-link" href=""><img
+                  class="item current-item" src=""></a></button>
           </li>
           <li class="slide" data-active>
             <button><a class="nav-link" href="https://github.com/LucasEscotoDaLuz/petshop-html-css-bootstrap"><img
