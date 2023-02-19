@@ -7,12 +7,11 @@ import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './componente/cabecalho/cabecalho.component';
 import { RodapeComponent } from './componente/rodape/rodape.component';
 import { InicioComponent } from './componente/inicio/inicio.component';
-import { ProjetosComponent } from './componente/projetos/projetos.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgImageSliderModule } from 'ng-image-slider';
-import { CarouselComponent } from "./componente/projetos/carousel.component";
 import { CurriculoComponent } from "./componente/curriculo/curriculo.component";
+import { ImageSliderModule } from './componente/imageSlider/imageSlider.module';
 
 @NgModule({
     declarations: [
@@ -20,8 +19,9 @@ import { CurriculoComponent } from "./componente/curriculo/curriculo.component";
         CabecalhoComponent,
         RodapeComponent,
         InicioComponent,
-        ProjetosComponent,
-        CurriculoComponent
+        CurriculoComponent,
+
+
     ],
     providers: [DownloadFileService],
     bootstrap: [AppComponent],
@@ -32,6 +32,7 @@ import { CurriculoComponent } from "./componente/curriculo/curriculo.component";
         ReactiveFormsModule,
         HttpClientModule,
         NgImageSliderModule,
+        ImageSliderModule,
 
     ]
 })
