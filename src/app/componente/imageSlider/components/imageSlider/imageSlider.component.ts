@@ -10,7 +10,7 @@ import {
 import { SlideInterface } from '../../types/slide.interface';
 
 @Component({
-  selector: 'image-slider',
+  selector: 'imageslider',
   templateUrl: './imageSlider.component.html',
   styleUrls: ['./imageSlider.component.css'],
 })
