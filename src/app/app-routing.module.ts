@@ -4,6 +4,7 @@ import { InicioComponent } from './componente/inicio/inicio.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+
 const routes: Routes = [
   {path: '', component: InicioComponent},
   {path: 'inicio', component: InicioComponent},
