@@ -1,4 +1,3 @@
-import { DownloadFileService } from './../../download-file.service';
 import {   Component,
   Input,
   OnDestroy,
@@ -7,24 +6,12 @@ import {   Component,
 import { Subscription, timer } from 'rxjs';
 
 @Component({
-  selector: 'app-inicio',
-  templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.css']
+  selector: 'app-conhecimentos',
+  templateUrl: './conhecimentos.component.html',
+  styleUrls: ['./conhecimentos.component.css']
 })
-export class InicioComponent  implements OnInit, OnDestroy{
-  constructor(private DownloadFileService: DownloadFileService) {}
-  public downloadFile(): void {
-    this.DownloadFileService.downloadFile()
-    .subscribe(Response => {
-      let fileName=Response.headers.get('content-disposition')
-      ?.split(';') [1].split('=')[1];
-      let blob:Blob=Response.body as Blob;
-      let a = document.createElement('a');
-      window.open('../../../assets/Lucas Escoto da Luz - Curriculo Atualizado.pdf');
-      a.click();
-    })
-  }
-
+export class ConhecimentosComponent implements OnInit, OnDestroy
+{
   timerSubs!: Subscription;
 
   @Input() imagens: string[] = [];

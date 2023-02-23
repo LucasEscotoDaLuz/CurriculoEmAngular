@@ -216,3 +216,16 @@ button:hover {
 span {
   background:none;
 }
+
+div .item {
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  padding: 50px;
+  transition: all 0.5s ease-in-out;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

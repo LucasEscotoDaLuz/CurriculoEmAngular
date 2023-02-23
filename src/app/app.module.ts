@@ -1,3 +1,4 @@
+import { SwiperModule } from './../../node_modules/swiper/types/shared.d';
 import { DownloadFileService } from './download-file.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -11,7 +12,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { CurriculoComponent } from "./componente/curriculo/curriculo.component";
-import { ImageSliderModule } from './componente/imageSlider/imageSlider.module';
+import { CarrosselComponent } from './carrossel/carrossel.component';
+import { ConhecimentosComponent } from './conhecimentos/conhecimentos.component';
+
+
+
 
 @NgModule({
     declarations: [
@@ -20,9 +25,10 @@ import { ImageSliderModule } from './componente/imageSlider/imageSlider.module';
         RodapeComponent,
         InicioComponent,
         CurriculoComponent,
-
-
+        CarrosselComponent,
+        ConhecimentosComponent,
     ],
+
     providers: [DownloadFileService],
     bootstrap: [AppComponent],
     imports: [
@@ -32,8 +38,6 @@ import { ImageSliderModule } from './componente/imageSlider/imageSlider.module';
         ReactiveFormsModule,
         HttpClientModule,
         NgImageSliderModule,
-        ImageSliderModule,
-
     ]
 })
 export class AppModule { }
