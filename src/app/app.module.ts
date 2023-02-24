@@ -1,3 +1,4 @@
+
 import { SwiperModule } from './../../node_modules/swiper/types/shared.d';
 import { DownloadFileService } from './download-file.service';
 import { NgModule } from '@angular/core';
@@ -12,8 +13,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { CurriculoComponent } from "./componente/curriculo/curriculo.component";
-import { CarrosselComponent } from './carrossel/carrossel.component';
-import { ConhecimentosComponent } from './conhecimentos/conhecimentos.component';
+import { ProjetosComponent } from './componente/projetos/projetos.component';
+import { ConhecimentosComponent } from './componente/conhecimentos/conhecimentos.component';
 
 
 
@@ -25,8 +26,8 @@ import { ConhecimentosComponent } from './conhecimentos/conhecimentos.component'
         RodapeComponent,
         InicioComponent,
         CurriculoComponent,
-        CarrosselComponent,
-        ConhecimentosComponent,
+        ProjetosComponent,
+        ConhecimentosComponent
     ],
 
     providers: [DownloadFileService],
