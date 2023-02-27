@@ -16,7 +16,7 @@ p {
   color: white;
   font-family: 'Goldman', cursive;
   font-size: 16px;
-  text-align:center;
+  text-align: center;
   margin-block-end: 2em;
 }
 
@@ -33,3 +33,14 @@ img {
   margin: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  img {
+    grid-template-columns: repeat(1, 0.5fr);
+    transform: translate(50%);
+    max-width: 90%;
+    align-items: center;
+
+  }
+
+
+}

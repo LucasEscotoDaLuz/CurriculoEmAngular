@@ -45,7 +45,7 @@ b {
   background: none;
 }
 
-.navItems li a{
+.navItems li a {
   font-size: 25px;
   color: #00BFFF;
   letter-spacing: 3px;
@@ -61,10 +61,21 @@ b {
 .links a:hover {
   color: #7f00ff;
 }
-.links a{
+
+.links a {
   font-size: 30px;
   color: #3d535f;
   margin: 25px 10px;
 
 }
 
+@media (max-width: 1024px) {
+  header {
+    max-width: 100%;
+    font-size: 14px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+}

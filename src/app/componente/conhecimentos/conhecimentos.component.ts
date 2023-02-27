@@ -1,17 +1,13 @@
-import {   Component,
-  Input,
-  OnDestroy,
-  OnInit, } from '@angular/core';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 
 import { Subscription, timer } from 'rxjs';
 
 @Component({
   selector: 'app-conhecimentos',
   templateUrl: './conhecimentos.component.html',
-  styleUrls: ['./conhecimentos.component.css']
+  styleUrls: ['./conhecimentos.component.css'],
 })
-export class ConhecimentosComponent implements OnInit, OnDestroy
-{
+export class ConhecimentosComponent implements OnInit, OnDestroy {
   timerSubs!: Subscription;
 
   @Input() imagens: string[] = [];
@@ -22,8 +18,7 @@ export class ConhecimentosComponent implements OnInit, OnDestroy
   }
 
   set indexImagemAtiva(value: number) {
-    this._indexImagemAtiva =
-      value < this.imagens.length ? value : 0;
+    this._indexImagemAtiva = value < this.imagens.length ? value : 0;
   }
 
   ngOnInit(): void {
@@ -36,9 +31,7 @@ export class ConhecimentosComponent implements OnInit, OnDestroy
 
   iniciarTimer(): void {
     this.timerSubs = timer(2000).subscribe(() => {
-      this.ativarImagem(
-        this.indexImagemAtiva + 1
-      );
+      this.ativarImagem(this.indexImagemAtiva + 1);
     });
   }
 
