@@ -7,8 +7,15 @@
 .main-footer {
   display: flex;
   justify-content: center;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  width: 90px;
+  height: 90px;
+
+
 }
 
 p {
@@ -20,6 +27,8 @@ p {
   margin-block-end: 2em;
 }
 
+
+
 P :hover {
   color: #A9A9A9;
   text-decoration: underline;
@@ -28,10 +37,12 @@ P :hover {
 img {
   background: none;
   padding: 10px;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   margin: 0;
 }
+
+
 
 @media screen and (max-width: 1024px) {
   img {
@@ -39,8 +50,5 @@ img {
     transform: translate(50%);
     max-width: 90%;
     align-items: center;
-
   }
-
-
 }
