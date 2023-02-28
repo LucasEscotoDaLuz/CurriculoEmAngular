@@ -27,6 +27,13 @@ p {
   margin-block-end: 2em;
 }
 
+ul, li, a {
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 
 
 P :hover {
