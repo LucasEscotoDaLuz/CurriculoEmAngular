@@ -237,40 +237,26 @@ div .item {
 
 
 
-@media (max-width: 1400px) {
-  .div .item {
+@media (max-width: 720px) {
+  img {
+    position: absolute;
     margin: 1.5em;
-    display: grid;
+    display: block;
+    width: 200px;
     font-size: 24px;
     text-align: justify;
-  }
-
-}
-
-@media (max-width: 1024px) {
-
-  div .item {
-    max-width: 100%;
-  }
-
-  .div .item {
-    margin: 1.5em;
-    display: grid;
-    font-size: 14px;
-    text-align: justify;
-  }
-
-  .cols,
-  .cols1,
-  .imgbox {
-    position: relative;
-    height: 5%;
-    width: calc(130% -10px);
-    top: 0;
-    right: -50px;
-    transform: rotateY(0deg);
-    animation: animateUser 4s linear infinite;
+    transition: all 0.5s ease-in-out;
     background: none;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: #00BFFF;
+    color: #000;
+    box-shadow: 0 5px 15px #fff;
   }
 
 }

@@ -61,3 +61,11 @@ img {
     align-items: center;
   }
 }
+
+@media screen and (max-width: 480px) {
+	 img, p,ul, li, a, .main-footer{
+    display: grid;
+    grid-template-columns: repeat(1, 0.5fr);
+    max-width: 90%;
+	}
+}
